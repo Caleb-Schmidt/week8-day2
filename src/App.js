@@ -1,12 +1,13 @@
 import './App.css';
+import {useContext} from 'react';
 import AdminMenu from './components/AdminMenu';
 import NavBar from './components/NavBar';
+import Login from './views/Login';
 import {Route, Routes} from 'react-router-dom';
 import SnackBar from './components/SnackBar';
-import Box from '@mui/material/Box';
 import {AppContext} from './context/AppContext';
-import {useContext} from 'react';
-import Login from './views/Login';
+import Box from '@mui/material/Box';
+
 
 
 
@@ -14,7 +15,6 @@ const HomePage = () => (<h1>Welcome To The Bookstore!</h1>)
 
 function App() {
   const {user} = useContext(AppContext)
-
     // <Route path = "/register" element = {<Register />} />
 
   return (
